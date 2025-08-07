@@ -10,49 +10,142 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #121212;
       color: #e0e0e0;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    nav li {
+      position: relative;
+    }
+    nav a {
+      color: #80cbc4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav li:hover ul {
+      display: block;
+    }
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #2a2a2a;
+      padding: 0.5rem;
+      border-radius: 4px;
+    }
+    nav ul ul li {
+      margin: 0;
+    }
+    .container {
       padding: 2rem;
     }
-    h1 {
-      font-size: 2.5rem;
+    .section {
+      margin-bottom: 3rem;
+    }
+    .section h2 {
       color: #00bcd4;
       margin-bottom: 1rem;
     }
-    .section {
-      margin-bottom: 2rem;
-      padding: 1rem;
-      border-left: 4px solid #00bcd4;
-      background-color: #1e1e1e;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    .image-slot {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      background-color: #333;
+      border: 2px dashed #555;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      margin-top: 1rem;
     }
-    .section strong {
-      font-size: 1.2rem;
-      color: #ffffff;
-    }
-    a {
-      color: #80cbc4;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #444;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <h1>Josiah Freeman</h1>
+  <header>
+    <div><strong>Josiah Freeman</strong></div>
+    <nav>
+      <ul>
+        <li><a href="#">Cybersecurity</a>
+          <ul>
+            <li><a href="#ctf">CTFs</a></li>
+            <li><a href="#network">Network Analysis</a></li>
+          </ul>
+        </li>
+        <li><a href="#">AI Automation</a>
+          <ul>
+            <li><a href="#bots">Slack Bots</a></li>
+            <li><a href="#n8n">n8n Flows</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Web Dev</a>
+          <ul>
+            <li><a href="#nextjs">Next.js Projects</a></li>
+            <li><a href="#tailwind">Tailwind CSS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="section">
-    <strong>Cybersecurity & AI Automation</strong><br />
-    Building tools like <em>FantasyDraftBot</em>, <a href="https://n8n.io/" target="_blank">n8n flows</a>, and Slack integrations.
-  </div>
+  <div class="container">
+    <div class="profile-pic">Profile Pic</div>
 
-  <div class="section">
-    <strong>Web Development</strong><br />
-    Next.js, Tailwind CSS, Git, and Vercel deployment.
-  </div>
+    <div class="section" id="ctf">
+      <h2>CTFs & Blue Team Challenges</h2>
+      <p>Completed OverTheWire Bandit levels and participated in Blue Team competitions. Skilled in identifying vulnerabilities, analyzing logs, and defending systems under pressure.</p>
+      <div class="image-slot">CTF Screenshot Placeholder</div>
+    </div>
 
-  <div class="section">
-    <strong>CTFs & Network Analysis</strong><br />
-    Wireshark, OverTheWire Bandit, Blue Team challenges.
+    <div class="section" id="network">
+      <h2>Network Analysis</h2>
+      <p>Proficient with Wireshark for packet inspection, protocol analysis, and threat detection. Experience includes dissecting traffic patterns and identifying anomalies.</p>
+      <div class="image-slot">Wireshark Capture Placeholder</div>
+    </div>
+
+    <div class="section" id="bots">
+      <h2>Slack Bots</h2>
+      <p>Built FantasyDraftBot for draft analysis and waiver recommendations. Integrated with OpenAI and Slack APIs to deliver real-time insights and team reviews.</p>
+      <div class="image-slot">Bot Interface Placeholder</div>
+    </div>
+
+    <div class="section" id="n8n">
+      <h2>n8n Flows</h2>
+      <p>Automated workflows using n8n for data orchestration, notifications, and API chaining. Designed modular flows for scalable automation across platforms.</p>
+      <div class="image-slot">n8n Flow Diagram Placeholder</div>
+    </div>
+
+    <div class="section" id="nextjs">
+      <h2>Next.js Projects</h2>
+      <p>Developed and deployed responsive web apps using Next.js. Focused on clean architecture, dynamic routing, and optimized performance via Vercel.</p>
+      <div class="image-slot">Next.js App Screenshot Placeholder</div>
+    </div>
+
+    <div class="section" id="tailwind">
+      <h2>Tailwind CSS Styling</h2>
+      <p>Styled modern UIs with Tailwind CSS, emphasizing utility-first design and responsive layouts. Ensured accessibility and visual consistency across devices.</p>
+      <div class="image-slot">Tailwind UI Placeholder</div>
+    </div>
   </div>
 </body>
 </html>
