@@ -18,6 +18,16 @@
       justify-content: space-between;
       align-items: center;
     }
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    .header-left img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
     nav ul {
       list-style: none;
       display: flex;
@@ -59,31 +69,18 @@
     .image-slot {
       width: 100%;
       max-width: 600px;
-      height: 300px;
-      background-color: #333;
-      border: 2px dashed #555;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #aaa;
       margin-top: 1rem;
-    }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background-color: #444;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #aaa;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
   </style>
 </head>
 <body>
   <header>
-    <div><strong>Josiah Freeman</strong></div>
+    <div class="header-left">
+      <img src="public/Resized_39YR3JW4-6Q87.jpeg.jpg" alt="Josiah Freeman" />
+      <strong>Josiah Freeman</strong>
+    </div>
     <nav>
       <ul>
         <li><a href="#">Cybersecurity</a>
@@ -109,42 +106,36 @@
   </header>
 
   <div class="container">
-    <div class="profile-pic">Profile Pic</div>
-
     <div class="section" id="ctf">
       <h2>CTFs & Blue Team Challenges</h2>
       <p>Completed OverTheWire Bandit levels and participated in Blue Team competitions. Skilled in identifying vulnerabilities, analyzing logs, and defending systems under pressure.</p>
-      <div class="image-slot">CTF Screenshot Placeholder</div>
     </div>
 
     <div class="section" id="network">
       <h2>Network Analysis</h2>
       <p>Proficient with Wireshark for packet inspection, protocol analysis, and threat detection. Experience includes dissecting traffic patterns and identifying anomalies.</p>
-      <div class="image-slot">Wireshark Capture Placeholder</div>
+      <img src="public/JFreeman78.pcapngDownload Binary.url" alt="Wireshark Capture" class="image-slot" />
     </div>
 
     <div class="section" id="bots">
       <h2>Slack Bots</h2>
       <p>Built FantasyDraftBot for draft analysis and waiver recommendations. Integrated with OpenAI and Slack APIs to deliver real-time insights and team reviews.</p>
-      <div class="image-slot">Bot Interface Placeholder</div>
     </div>
 
     <div class="section" id="n8n">
       <h2>n8n Flows</h2>
       <p>Automated workflows using n8n for data orchestration, notifications, and API chaining. Designed modular flows for scalable automation across platforms.</p>
-      <div class="image-slot">n8n Flow Diagram Placeholder</div>
+      <img src="public/Screenshot 2025-08-07 131812.png" alt="n8n Workflow" class="image-slot" />
     </div>
 
     <div class="section" id="nextjs">
       <h2>Next.js Projects</h2>
       <p>Developed and deployed responsive web apps using Next.js. Focused on clean architecture, dynamic routing, and optimized performance via Vercel.</p>
-      <div class="image-slot">Next.js App Screenshot Placeholder</div>
     </div>
 
     <div class="section" id="tailwind">
       <h2>Tailwind CSS Styling</h2>
       <p>Styled modern UIs with Tailwind CSS, emphasizing utility-first design and responsive layouts. Ensured accessibility and visual consistency across devices.</p>
-      <div class="image-slot">Tailwind UI Placeholder</div>
     </div>
   </div>
 </body>
